@@ -8,7 +8,8 @@ Vue.config.productionTip = false;
 const axios = require("axios").default;
 
 // backend host url
-axios.backend = "http://localhost:8088";
+// axios.backend = "http://localhost:8088";
+axios.backend = `${VUE_APP_API_URI}`;
 
 axios.backendUrl = new URL(axios.backend);
 axios.fixUrl = function(original){
