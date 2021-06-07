@@ -4,9 +4,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --production
 # Production Build
-RUN npm ci --only=production
+# RUN npm ci --only=production
 COPY . .
-# RUN npm run build
+RUN npm run build
 
 # production stage
 FROM nginx:stable-alpine as production-stage
