@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: vaccine
-          image: anticorona.azurecr.io/frontend:latest
+          image: skccanticorona.azurecr.io/frontend:latest
           ports:
             - containerPort: 80
           resources:
